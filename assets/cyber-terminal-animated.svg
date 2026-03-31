@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-label="Animated cyber terminal simulation">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02060a"/>
+      <stop offset="100%" stop-color="#06121b"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9c"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="620" fill="url(#bg)"/>
+
+  <g stroke="#0d2432" stroke-width="1" opacity="0.75">
+    <path d="M0 40h1200M0 80h1200M0 120h1200M0 160h1200M0 200h1200M0 240h1200M0 280h1200M0 320h1200M0 360h1200M0 400h1200M0 440h1200M0 480h1200M0 520h1200M0 560h1200"/>
+    <path d="M80 0v620M160 0v620M240 0v620M320 0v620M400 0v620M480 0v620M560 0v620M640 0v620M720 0v620M800 0v620M880 0v620M960 0v620M1040 0v620M1120 0v620"/>
+  </g>
+
+  <text x="30" y="34" fill="#00ff9c" font-family="monospace" font-size="22" font-weight="700" filter="url(#glow)">
+    CYBER TERMINAL DEMO (SAFE MODE)
+  </text>
+  <text x="34" y="58" fill="#99c7d8" font-family="monospace" font-size="13">
+    No hacking | No network attacks | Visual animation only
+  </text>
+
+  <rect x="24" y="80" width="1152" height="2" fill="url(#neon)" opacity="0.9"/>
+
+  <rect x="30" y="98" width="550" height="220" rx="8" fill="#08131c" stroke="#00ff9c" stroke-opacity="0.35"/>
+  <text x="46" y="126" fill="#00ff9c" font-family="monospace" font-size="15">System / Demo Progress</text>
+  <text x="46" y="150" fill="#c8f7dd" font-family="monospace" font-size="13">SESSION: cyberdemo</text>
+  <text x="46" y="174" fill="#c8f7dd" font-family="monospace" font-size="13">Natas: L8  |  Leviathan: L3</text>
+  <text x="46" y="198" fill="#c8f7dd" font-family="monospace" font-size="13">Tools: Linux | nmap | strings</text>
+  <text x="46" y="226" fill="#86b89f" font-family="monospace" font-size="12">[sim] indexing local project files...</text>
+  <text x="46" y="246" fill="#86b89f" font-family="monospace" font-size="12">[sim] copying documents to backup...</text>
+  <text x="46" y="266" fill="#86b89f" font-family="monospace" font-size="12">[sim] checksums verified...</text>
+  <text x="46" y="286" fill="#86b89f" font-family="monospace" font-size="12">[sim] done (safe demo)</text>
+
+  <rect x="50" y="300" width="500" height="8" rx="4" fill="#132531"/>
+  <rect x="50" y="300" width="80" height="8" rx="4" fill="url(#neon)">
+    <animate attributeName="width" values="60;460;220;500;80" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="600" y="98" width="570" height="220" rx="8" fill="#08131c" stroke="#00d4ff" stroke-opacity="0.35"/>
+  <text x="616" y="126" fill="#00d4ff" font-family="monospace" font-size="15">Matrix Stream</text>
+
+  <g fill="#6dff9f" font-family="monospace" font-size="12" opacity="0.9">
+    <text x="620" y="154"># &amp; * 7 z p 1 a c m 9</text>
+    <text x="620" y="172">k 3 x r t ? n b d 4 f</text>
+    <text x="620" y="190">v 8 h + y l q w 2 j e</text>
+    <text x="620" y="208">g i 0 s u % o 5 c p t</text>
+    <text x="620" y="226">m 4 n d z 7 b a 6 r h</text>
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0 0;0 10;0 0" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+
+  <rect x="618" y="242" width="520" height="1.5" fill="url(#neon)" opacity="0.8">
+    <animate attributeName="y" values="242;292;242" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="30" y="336" width="1140" height="220" rx="8" fill="#08131c" stroke="#00ff9c" stroke-opacity="0.35"/>
+  <text x="46" y="364" fill="#00ff9c" font-family="monospace" font-size="15">Learning Timeline</text>
+  <text x="46" y="394" fill="#dbf7ff" font-family="monospace" font-size="13">[x] OverTheWire Natas -> level 8</text>
+  <text x="46" y="418" fill="#dbf7ff" font-family="monospace" font-size="13">[x] OverTheWire Leviathan -> level 3</text>
+  <text x="46" y="442" fill="#dbf7ff" font-family="monospace" font-size="13">[~] nmap host/service discovery (basic)</text>
+  <text x="46" y="466" fill="#dbf7ff" font-family="monospace" font-size="13">[~] strings for quick binary inspection</text>
+  <text x="46" y="490" fill="#9ac6d8" font-family="monospace" font-size="12">Goal: honest progress, no fake expert claims.</text>
+
+  <rect x="46" y="516" width="1060" height="14" rx="7" fill="#122430" stroke="#00ff9c" stroke-opacity="0.35"/>
+  <rect x="48" y="518" width="120" height="10" rx="5" fill="url(#neon)">
+    <animate attributeName="width" values="300;690;540;740;620;300" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <text x="720" y="528" fill="#dbf7ff" font-family="monospace" font-size="12">Learning Progress (live style)</text>
+</svg>

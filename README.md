@@ -118,7 +118,11 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <p align="center"><strong>Safe simulation only</strong> - terminal aesthetics, no hacking, no real credentials, no network attacks.</p>
 
 <div align="center">
-<img src="./assets/cyber-terminal-demo.svg" width="100%" alt="Cyber terminal demo style"/>
+<img src="./assets/cyber-terminal-animated.svg" width="100%" alt="Animated cyber terminal demo"/>
+</div>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution snake"/>
 </div>
 
 ```bash
