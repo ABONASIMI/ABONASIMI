@@ -3,7 +3,7 @@
 <!-- DYNAMIC_VENOM_HEADER_START -->
 <img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:000000,100:1f6feb&text=Mohamad%20Abobaker%20Nasimi&fontSize=50&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Student%20of%20CS%20in%20Sorbonne%20University%20%7C%20Student%20in%20Ecole%2042%20Paris&descSize=18&descColor=FFFFFF&descAlignY=65" width="100%"/>
 <!-- DYNAMIC_VENOM_HEADER_END -->
-<img src="https://readme-typing-svg.demolab.com?font=Audiowide&size=28&pause=1000&color=00F0FF&center=true&vCenter=true&width=900&lines=Hello+folks;I'm+Mohamad+Abobaker+Nasimi;Student+of+CS+in+Sorbonne+University;Student+in+Ecole+42+Paris" />
+<img src="https://readme-typing-svg.demolab.com?font=Audiowide&size=28&pause=1000&color=00F0FF&center=true&vCenter=true&width=900&lines=Hello;I+am+student+of+CS+in+Sorbonne+University;I+am+student+in+Ecole+42+Paris" />
 
 
 <br/>
@@ -21,8 +21,8 @@ const mohamad = {
         "Student of CS in Sorbonne University",
         "Student in Ecole 42 Paris"
     ],
-    languages: ["HTML", "CSS", "Markdown", "Java", "Python", "Dart"],
-    tools: ["Bash", "Git", "GitHub"]
+    languages: ["HTML", "CSS", "Markdown", "Java", "Python", "Dart", "C", "SQL", "Bash"],
+    tools: ["Git", "GitHub"]
 };
 ```
 <!-- <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dDBxYTZtNWJoNnluN3NxNGF6eDF3aDl3dnEyNzZxdjB5OXltamJyNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Tz30dcgKE3GCTYpxol/giphy.gif" height="90px" width="140px"> -->
@@ -47,11 +47,14 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <br/>
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
 
 </div>
 </td>
@@ -60,7 +63,6 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <div align="center" style="background:#f85149;padding:25px;border-radius:18px;">
 <h3>Tools</h3>
 <br/>
-<img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </div>
@@ -73,6 +75,16 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> GitHub Analytics</h2>
+
+<div align="center">
+<h3>Live GitHub Profile Info</h3>
+<p><strong>Name:</strong> Mohamad Abobaker Nasimi</p>
+<p><strong>Username:</strong> ABONASIMI</p>
+<p><strong>Public Repositories:</strong> 3</p>
+<p><strong>Followers:</strong> 2</p>
+<p><strong>Following:</strong> 2</p>
+<p><strong>Profile:</strong> <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></p>
+</div>
 
 <div align="center">
 <img height="180em"
