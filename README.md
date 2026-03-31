@@ -148,10 +148,6 @@ const mohamad = {
 </div>
 
 <div align="center">
-<img src="./assets/contribution-snake-demo.svg" width="100%" alt="Contribution snake animation"/>
-</div>
-
-<div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
