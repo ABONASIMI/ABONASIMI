@@ -3,9 +3,7 @@
 <!-- DYNAMIC_VENOM_HEADER_START -->
 <img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:000000,100:1f6feb&text=Mohamad%20Abobaker%20Nasimi&fontSize=50&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Student%20of%20CS%20in%20Sorbonne%20University%20%7C%20Student%20in%20Ecole%2042%20Paris&descSize=18&descColor=FFFFFF&descAlignY=65" width="100%"/>
 <!-- DYNAMIC_VENOM_HEADER_END -->
-<h3 align="center">Hello</h3>
-<p align="center">I am student of CS in Sorbonne University</p>
-<p align="center">I am student in Ecole 42 Paris</p>
+<img src="https://readme-typing-svg.demolab.com?font=Audiowide&size=28&pause=1000&color=00F0FF&center=true&vCenter=true&width=900&lines=Hello;I+am+student+of+CS+in+Sorbonne+University;I+am+student+in+Ecole+42+Paris" />
 
 
 <br/>
@@ -81,12 +79,10 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 <div align="center">
 <h3>Live data from <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></h3>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ABONASIMI&theme=github_dark" width="100%" alt="GitHub profile details"/>
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=00FFFF&sideLabels=8B949E&dates=8B949E" height="185" alt="GitHub streak stats"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ABONASIMI&theme=github_dark" height="185" alt="GitHub stats"/>
+<img src="https://streak-stats.demolab.com?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=00FFFF&sideLabels=8B949E&dates=8B949E" height="185" alt="GitHub streak stats"/>
 </div>
 
 <div align="center">
