@@ -141,26 +141,24 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
 
-<p align="center"><strong>From <code>scripts/cyber.html</code> and <code>scripts/cyber2.html</code> (same visual style)</strong></p>
-
-<p align="center"><strong>cyber.html - GLOBAL_RADAR // NODE_MAP</strong></p>
-<div align="center">
-<img src="./assets/cyber-radar-node-map.svg" width="100%" alt="GLOBAL_RADAR // NODE_MAP"/>
-</div>
-
-<p align="center"><strong>cyber.html - SERVER_LOGS // COMMAND_INTERFACE</strong></p>
-<div align="center">
-<img src="./assets/cyber-terminal-logs.svg" width="100%" alt="SERVER_LOGS // COMMAND_INTERFACE"/>
-</div>
-
-<p align="center"><strong>cyber2.html - Global Node Topology</strong></p>
 <div align="center">
 <img src="./assets/cyber2-node-topology.svg" width="100%" alt="Tracking 54 Active Nodes"/>
 </div>
 
-<p align="center"><strong>cyber2.html - Matrix Background</strong></p>
 <div align="center">
 <img src="./assets/cyber2-matrix-rain.svg" width="100%" alt="Matrix background visual"/>
+</div>
+
+<div align="center">
+<img src="./assets/contribution-snake-demo.svg" width="100%" alt="Contribution snake animation"/>
+</div>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+  <img alt="Pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+</picture>
 </div>
 
 ---
