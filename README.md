@@ -134,12 +134,12 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 <p align="center">I am learning cybersecurity step by step through labs and CTF practice (Natas level 8 and Leviathan level 3).</p>
 
-<div align="center">
-<img src="./assets/cyber-ctf-game.svg" width="100%" alt="Cyber Learning Lab"/>
-</div>
-
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
+
+<div align="center">
+<img src="./assets/cyber-terminal-logs.svg" width="100%" alt="SERVER_LOGS // COMMAND_INTERFACE"/>
+</div>
 
 <div align="center">
 <img src="./assets/cyber2-node-topology.svg" width="100%" alt="Tracking 54 Active Nodes"/>
