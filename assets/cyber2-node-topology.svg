@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Tracking 54 Active Nodes">
+  <rect width="1200" height="420" fill="#d9dbde"/>
+
+  <text x="4" y="30" fill="#101010" font-family="Georgia, serif" font-size="42">Tracking 54 Active Nodes</text>
+  <text x="4" y="68" fill="#101010" font-family="Georgia, serif" font-size="42">Encrypted Tunnels: ACTIVE</text>
+
+  <g stroke="#6feeff" stroke-width="2" opacity="0.55">
+    <line x1="10" y1="112" x2="120" y2="162"/>
+    <line x1="120" y1="162" x2="60" y2="214"/>
+    <line x1="60" y1="214" x2="24" y2="200"/>
+
+    <line x1="214" y1="112" x2="300" y2="98"/>
+    <line x1="300" y1="98" x2="350" y2="170"/>
+    <line x1="350" y1="170" x2="270" y2="230"/>
+    <line x1="270" y1="230" x2="214" y2="112"/>
+
+    <line x1="420" y1="90" x2="500" y2="140"/>
+    <line x1="500" y1="140" x2="470" y2="224"/>
+    <line x1="470" y1="224" x2="404" y2="182"/>
+    <line x1="404" y1="182" x2="420" y2="90"/>
+
+    <line x1="860" y1="90" x2="930" y2="82"/>
+    <line x1="930" y1="82" x2="1000" y2="98"/>
+    <line x1="1000" y1="98" x2="1014" y2="170"/>
+    <line x1="1014" y1="170" x2="950" y2="196"/>
+    <line x1="950" y1="196" x2="900" y2="112"/>
+
+    <line x1="810" y1="302" x2="902" y2="320"/>
+    <line x1="902" y1="320" x2="996" y2="304"/>
+    <line x1="996" y1="304" x2="1056" y2="244"/>
+    <line x1="1056" y1="244" x2="1000" y2="214"/>
+    <line x1="1000" y1="214" x2="960" y2="302"/>
+    <line x1="960" y1="302" x2="1056" y2="244"/>
+
+    <line x1="542" y1="250" x2="600" y2="214"/>
+    <line x1="600" y1="214" x2="650" y2="200"/>
+    <line x1="650" y1="200" x2="620" y2="248"/>
+    <line x1="620" y1="248" x2="560" y2="302"/>
+    <line x1="560" y1="302" x2="542" y2="250"/>
+  </g>
+
+  <g stroke="#8df5ff" stroke-width="1" opacity="0.25">
+    <line x1="300" y1="98" x2="500" y2="140"/>
+    <line x1="350" y1="170" x2="470" y2="224"/>
+    <line x1="930" y1="82" x2="1056" y2="244"/>
+    <line x1="1000" y1="98" x2="960" y2="302"/>
+    <line x1="120" y1="162" x2="214" y2="112"/>
+  </g>
+
+  <g fill="#05e9ff">
+    <circle cx="10" cy="112" r="5"/>
+    <circle cx="120" cy="162" r="5"/>
+    <circle cx="60" cy="214" r="5"/>
+    <circle cx="24" cy="200" r="5"/>
+
+    <circle cx="214" cy="112" r="5"/>
+    <circle cx="300" cy="98" r="5"/>
+    <circle cx="350" cy="170" r="5"/>
+    <circle cx="270" cy="230" r="5"/>
+
+    <circle cx="420" cy="90" r="5"/>
+    <circle cx="500" cy="140" r="5"/>
+    <circle cx="470" cy="224" r="5"/>
+    <circle cx="404" cy="182" r="5"/>
+
+    <circle cx="860" cy="90" r="5"/>
+    <circle cx="930" cy="82" r="5"/>
+    <circle cx="1000" cy="98" r="5"/>
+    <circle cx="1014" cy="170" r="5"/>
+    <circle cx="950" cy="196" r="5"/>
+    <circle cx="900" cy="112" r="5"/>
+
+    <circle cx="810" cy="302" r="5"/>
+    <circle cx="902" cy="320" r="5"/>
+    <circle cx="996" cy="304" r="5"/>
+    <circle cx="1056" cy="244" r="5"/>
+    <circle cx="1000" cy="214" r="5"/>
+    <circle cx="960" cy="302" r="5"/>
+
+    <circle cx="542" cy="250" r="5"/>
+    <circle cx="600" cy="214" r="5"/>
+    <circle cx="650" cy="200" r="5"/>
+    <circle cx="620" cy="248" r="5"/>
+    <circle cx="560" cy="302" r="5"/>
+
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/>
+  </g>
+</svg>

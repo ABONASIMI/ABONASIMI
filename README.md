@@ -141,19 +141,26 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
 
-<p align="center"><strong>Safe simulation only</strong> - visual animation only, no hacking, no real credentials, no network attacks.</p>
-<p align="center">These are README-safe animated versions of <code>scripts/cyber.html</code> and <code>scripts/cyber2.html</code>.</p>
+<p align="center"><strong>From <code>scripts/cyber.html</code> and <code>scripts/cyber2.html</code> (same visual style)</strong></p>
 
-<p align="center"><strong>cyber</strong></p>
-
+<p align="center"><strong>cyber.html - GLOBAL_RADAR // NODE_MAP</strong></p>
 <div align="center">
-<img src="./assets/cyber-terminal-animated.svg" width="100%" alt="cyber animation"/>
+<img src="./assets/cyber-radar-node-map.svg" width="100%" alt="GLOBAL_RADAR // NODE_MAP"/>
 </div>
 
-<p align="center"><strong>cyber2</strong></p>
-
+<p align="center"><strong>cyber.html - SERVER_LOGS // COMMAND_INTERFACE</strong></p>
 <div align="center">
-<img src="./assets/cyber2-control-center-animated.svg" width="100%" alt="cyber2 animation"/>
+<img src="./assets/cyber-terminal-logs.svg" width="100%" alt="SERVER_LOGS // COMMAND_INTERFACE"/>
+</div>
+
+<p align="center"><strong>cyber2.html - Global Node Topology</strong></p>
+<div align="center">
+<img src="./assets/cyber2-node-topology.svg" width="100%" alt="Tracking 54 Active Nodes"/>
+</div>
+
+<p align="center"><strong>cyber2.html - Matrix Background</strong></p>
+<div align="center">
+<img src="./assets/cyber2-matrix-rain.svg" width="100%" alt="Matrix background visual"/>
 </div>
 
 ---
