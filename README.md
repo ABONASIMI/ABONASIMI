@@ -141,22 +141,13 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
 
-<p align="center"><strong>Safe simulation only</strong> - terminal aesthetics, no hacking, no real credentials, no network attacks.</p>
-
-<p align="center"><strong>cyber</strong></p>
-
-<div align="center">
-<img src="./assets/cyber-terminal-animated.svg" width="100%" alt="Animated cyber terminal demo"/>
-</div>
-
-<p align="center"><strong>cyber2</strong></p>
+<p align="center"><strong>Safe simulation only</strong> - visual animation only, no hacking, no real credentials, no network attacks.</p>
+<p align="center">In my profile, I use the exact animations from these two files:</p>
+<p align="center"><code>scripts/cyber.html</code> and <code>scripts/cyber2.html</code></p>
 
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
-  <img alt="Pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
-</picture>
+<a href="./scripts/cyber.html"><strong>Open cyber.html</strong></a> •
+<a href="./scripts/cyber2.html"><strong>Open cyber2.html</strong></a>
 </div>
 
 ---
