@@ -95,16 +95,16 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 </div>
 
 ---
-<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Security Zone</h2>
+<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cybersecurity Learning</h2>
 
 <div align="center">
-<img src="https://img.shields.io/badge/Kali_Linux-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-004170?style=for-the-badge&logo=gnubash&logoColor=white"/>
-<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white"/>
-<img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white"/>
-<img src="https://img.shields.io/badge/Metasploit-2E2E2E?style=for-the-badge&logo=metasploit&logoColor=white"/>
+<img src="https://img.shields.io/badge/Level-Beginner-1f6feb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OverTheWire-Natas%20Level%208-00e7ff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Nmap-Basic%20Usage-004170?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux-Learning-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
 </div>
+
+<p align="center">I am learning cybersecurity step by step through labs and CTF practice.</p>
 
 <div align="center">
 <img src="./assets/cyber-ctf-game.svg" width="100%" alt="Cyber CTF game board"/>

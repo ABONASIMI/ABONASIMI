@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Cyber CTF game board">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Cybersecurity learning board">
   <defs>
     <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
       <stop offset="0%" stop-color="#040b17"/>
@@ -24,35 +24,35 @@
     <path d="M120 0v360M240 0v360M360 0v360M480 0v360M600 0v360M720 0v360M840 0v360M960 0v360M1080 0v360"/>
   </g>
 
-  <text x="40" y="48" fill="#00e7ff" font-family="monospace" font-size="30" font-weight="700" filter="url(#glow)">CYBER CTF ARENA</text>
-  <text x="42" y="76" fill="#91a8c1" font-family="monospace" font-size="15">Status: LIVE | Mode: Blue Team + Red Team Labs</text>
+  <text x="40" y="48" fill="#00e7ff" font-family="monospace" font-size="30" font-weight="700" filter="url(#glow)">CYBER LEARNING LAB</text>
+  <text x="42" y="76" fill="#91a8c1" font-family="monospace" font-size="15">Status: Beginner Journey | Practice and Learning</text>
 
   <rect x="40" y="96" width="1120" height="1.5" fill="url(#line)" opacity="0.8"/>
 
   <g font-family="monospace">
     <rect x="60" y="122" width="520" height="48" rx="8" fill="#0a172b" stroke="#00e7ff" stroke-opacity="0.4"/>
-    <text x="80" y="152" fill="#d7f6ff" font-size="19">[1] RECON MISSION</text>
+    <text x="80" y="152" fill="#d7f6ff" font-size="19">[1] NATAS (LEVEL 0 TO 8)</text>
     <text x="330" y="152" fill="#00ffa3" font-size="16">COMPLETE</text>
 
     <rect x="620" y="122" width="520" height="48" rx="8" fill="#0a172b" stroke="#00e7ff" stroke-opacity="0.4"/>
-    <text x="640" y="152" fill="#d7f6ff" font-size="19">[2] WEB EXPLOIT LAB</text>
-    <text x="940" y="152" fill="#ffd166" font-size="16">IN PROGRESS</text>
+    <text x="640" y="152" fill="#d7f6ff" font-size="19">[2] NMAP BASIC SCANS</text>
+    <text x="940" y="152" fill="#00ffa3" font-size="16">ACTIVE</text>
 
     <rect x="60" y="184" width="520" height="48" rx="8" fill="#0a172b" stroke="#00e7ff" stroke-opacity="0.4"/>
-    <text x="80" y="214" fill="#d7f6ff" font-size="19">[3] PRIV ESC CHALLENGE</text>
+    <text x="80" y="214" fill="#d7f6ff" font-size="19">[3] WEB SECURITY BASICS</text>
     <text x="380" y="214" fill="#ffd166" font-size="16">IN PROGRESS</text>
 
     <rect x="620" y="184" width="520" height="48" rx="8" fill="#0a172b" stroke="#00e7ff" stroke-opacity="0.4"/>
-    <text x="640" y="214" fill="#d7f6ff" font-size="19">[4] FINAL FLAG CAPTURE</text>
-    <text x="945" y="214" fill="#ff6b6b" font-size="16">LOCKED</text>
+    <text x="640" y="214" fill="#d7f6ff" font-size="19">[4] NEXT: BANDIT / PORTSWIGGER</text>
+    <text x="945" y="214" fill="#ff6b6b" font-size="16">UP NEXT</text>
   </g>
 
   <g font-family="monospace">
-    <text x="62" y="272" fill="#95b3cc" font-size="14">Active toolkit: Nmap | Wireshark | Burp Suite | SQLMap | Metasploit</text>
-    <text x="62" y="296" fill="#95b3cc" font-size="14">Tip: Consistent daily commits keep your security graph alive.</text>
+    <text x="62" y="272" fill="#95b3cc" font-size="14">Current toolkit: Linux | Nmap</text>
+    <text x="62" y="296" fill="#95b3cc" font-size="14">Goal: Learn deeply and build skills step by step.</text>
   </g>
 
   <rect x="60" y="316" width="1080" height="14" rx="7" fill="#0b1f33" stroke="#00e7ff" stroke-opacity="0.35"/>
-  <rect x="62" y="318" width="740" height="10" rx="5" fill="url(#line)" opacity="0.9"/>
-  <text x="820" y="328" fill="#d7f6ff" font-family="monospace" font-size="12">Mission Progress: 68%</text>
+  <rect x="62" y="318" width="460" height="10" rx="5" fill="url(#line)" opacity="0.9"/>
+  <text x="540" y="328" fill="#d7f6ff" font-family="monospace" font-size="12">Learning Progress: 42%</text>
 </svg>
