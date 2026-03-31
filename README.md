@@ -143,17 +143,13 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 <p align="center"><strong>Safe simulation only</strong> - terminal aesthetics, no hacking, no real credentials, no network attacks.</p>
 
+<p align="center"><strong>cyber</strong></p>
+
 <div align="center">
 <img src="./assets/cyber-terminal-animated.svg" width="100%" alt="Animated cyber terminal demo"/>
 </div>
 
-<p align="center">
-  <a href="./cyber.html">
-    <img src="https://img.shields.io/badge/Open-cyber.html-00E7FF?style=for-the-badge&logo=html5&logoColor=06121d" alt="Open cyber html page"/>
-  </a>
-</p>
-
-<p align="center"><strong>so-long</strong></p>
+<p align="center"><strong>cyber2</strong></p>
 
 <div align="center">
 <picture>
