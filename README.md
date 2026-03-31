@@ -140,7 +140,7 @@ const mohamad = {
 </div>
 
 <div align="center">
-<img src="./assets/cyber2-node-topology.svg" width="100%" alt="Tracking 54 Active Nodes"/>
+<img src="./assets/cyber2-neuron-network.svg" width="100%" alt="Animated neuron network"/>
 </div>
 
 <div align="center">

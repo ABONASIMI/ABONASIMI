@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Animated neuron network">
+  <defs>
+    <linearGradient id="netBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#01070f"/>
+      <stop offset="100%" stop-color="#041326"/>
+    </linearGradient>
+    <linearGradient id="netLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d0ff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#59f4ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00d0ff" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8fffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8fffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d5ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#00d5ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <path id="route1" d="M120 176 C220 138 300 186 380 170"/>
+    <path id="route2" d="M380 170 C470 146 530 176 602 192"/>
+    <path id="route3" d="M602 192 C700 166 802 150 902 170"/>
+    <path id="route4" d="M902 170 C856 238 760 268 652 254"/>
+    <path id="route5" d="M652 254 C530 286 370 274 224 230"/>
+    <path id="route6" d="M224 230 C164 214 134 198 120 176"/>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#netBg)"/>
+  <rect x="4" y="4" width="1192" height="412" rx="6" fill="none" stroke="#00ccff" stroke-opacity="0.45"/>
+
+  <g stroke="url(#netLine)" stroke-width="1.2" fill="none">
+    <path d="M120 176 C220 138 300 186 380 170" stroke-dasharray="5 8">
+      <animate attributeName="stroke-opacity" values="0.15;0.65;0.15" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M380 170 C470 146 530 176 602 192" stroke-dasharray="5 9">
+      <animate attributeName="stroke-opacity" values="0.15;0.75;0.15" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M602 192 C700 166 802 150 902 170" stroke-dasharray="5 8">
+      <animate attributeName="stroke-opacity" values="0.15;0.7;0.15" dur="2.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M902 170 C856 238 760 268 652 254" stroke-dasharray="4 8">
+      <animate attributeName="stroke-opacity" values="0.15;0.65;0.15" dur="2.7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M652 254 C530 286 370 274 224 230" stroke-dasharray="5 10">
+      <animate attributeName="stroke-opacity" values="0.15;0.8;0.15" dur="2.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M224 230 C164 214 134 198 120 176" stroke-dasharray="4 8">
+      <animate attributeName="stroke-opacity" values="0.15;0.7;0.15" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g fill="#9ffbff">
+    <circle r="3.1">
+      <animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#route1"/></animateMotion>
+    </circle>
+    <circle r="3.1">
+      <animateMotion dur="3.8s" repeatCount="indefinite"><mpath href="#route2"/></animateMotion>
+    </circle>
+    <circle r="3.1">
+      <animateMotion dur="4.1s" repeatCount="indefinite"><mpath href="#route3"/></animateMotion>
+    </circle>
+    <circle r="3.1">
+      <animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#route4"/></animateMotion>
+    </circle>
+    <circle r="3.1">
+      <animateMotion dur="4.2s" repeatCount="indefinite"><mpath href="#route5"/></animateMotion>
+    </circle>
+    <circle r="3.1">
+      <animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#route6"/></animateMotion>
+    </circle>
+  </g>
+
+  <g>
+    <g transform="translate(120 176)">
+      <polyline points="-76,-6 -28,-28 20,-10 -14,24 -84,12 -76,-6" fill="none" stroke="#3beeff" stroke-opacity="0.55" stroke-width="1.4"/>
+      <circle cx="-76" cy="-6" r="3.3" fill="#38f0ff"/>
+      <circle cx="-28" cy="-28" r="3.3" fill="#38f0ff"/>
+      <circle cx="20" cy="-10" r="3.3" fill="#38f0ff"/>
+      <circle cx="-14" cy="24" r="3.3" fill="#38f0ff"/>
+      <circle cx="-84" cy="12" r="3.3" fill="#38f0ff"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;12 -8;-10 10;0 0" dur="7.2s" repeatCount="indefinite"/>
+    </g>
+
+    <g transform="translate(370 168)">
+      <polyline points="-70,0 -30,-34 14,-8 -8,30 -54,18 -70,0" fill="none" stroke="#3beeff" stroke-opacity="0.55" stroke-width="1.4"/>
+      <circle cx="-70" cy="0" r="3.3" fill="#38f0ff"/>
+      <circle cx="-30" cy="-34" r="3.3" fill="#38f0ff"/>
+      <circle cx="14" cy="-8" r="3.3" fill="#38f0ff"/>
+      <circle cx="-8" cy="30" r="3.3" fill="#38f0ff"/>
+      <circle cx="-54" cy="18" r="3.3" fill="#38f0ff"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;-14 8;10 -10;0 0" dur="8.1s" repeatCount="indefinite"/>
+    </g>
+
+    <g transform="translate(602 192)">
+      <polyline points="-76,2 -34,-26 18,-14 -2,18 -40,36 -76,2" fill="none" stroke="#3beeff" stroke-opacity="0.55" stroke-width="1.4"/>
+      <circle cx="-76" cy="2" r="3.3" fill="#38f0ff"/>
+      <circle cx="-34" cy="-26" r="3.3" fill="#38f0ff"/>
+      <circle cx="18" cy="-14" r="3.3" fill="#38f0ff"/>
+      <circle cx="-2" cy="18" r="3.3" fill="#38f0ff"/>
+      <circle cx="-40" cy="36" r="3.3" fill="#38f0ff"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;10 12;-8 -10;0 0" dur="7.6s" repeatCount="indefinite"/>
+    </g>
+
+    <g transform="translate(902 170)">
+      <polyline points="-74,-4 -30,-26 20,-14 30,22 -28,44 -72,20 -74,-4" fill="none" stroke="#3beeff" stroke-opacity="0.55" stroke-width="1.4"/>
+      <circle cx="-74" cy="-4" r="3.3" fill="#38f0ff"/>
+      <circle cx="-30" cy="-26" r="3.3" fill="#38f0ff"/>
+      <circle cx="20" cy="-14" r="3.3" fill="#38f0ff"/>
+      <circle cx="30" cy="22" r="3.3" fill="#38f0ff"/>
+      <circle cx="-28" cy="44" r="3.3" fill="#38f0ff"/>
+      <circle cx="-72" cy="20" r="3.3" fill="#38f0ff"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;-12 8;10 -8;0 0" dur="7.9s" repeatCount="indefinite"/>
+    </g>
+
+    <g transform="translate(740 262)">
+      <polyline points="-64,-6 -12,-14 38,-6 24,32 -24,38 -64,-6" fill="none" stroke="#3beeff" stroke-opacity="0.45" stroke-width="1.3"/>
+      <circle cx="-64" cy="-6" r="3" fill="#2ce8ff"/>
+      <circle cx="-12" cy="-14" r="3" fill="#2ce8ff"/>
+      <circle cx="38" cy="-6" r="3" fill="#2ce8ff"/>
+      <circle cx="24" cy="32" r="3" fill="#2ce8ff"/>
+      <circle cx="-24" cy="38" r="3" fill="#2ce8ff"/>
+      <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;8 -10;-6 8;0 0" dur="8.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <circle cx="602" cy="192" r="16" fill="url(#nodeGlow)">
+    <animate attributeName="r" values="9;24;9" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="902" cy="170" r="16" fill="url(#nodeGlow)">
+    <animate attributeName="r" values="10;23;10" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="370" cy="168" r="16" fill="url(#nodeGlow)">
+    <animate attributeName="r" values="8;21;8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="610" cy="202" r="14" fill="none" stroke="#00f3ff" stroke-opacity="0.35" stroke-width="1.3">
+    <animate attributeName="r" values="14;170" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="18" y="404" width="1160" height="2" fill="url(#scan)" opacity="0.7">
+    <animate attributeName="y" values="56;404;56" dur="3.6s" repeatCount="indefinite"/>
+  </rect>
+</svg>
