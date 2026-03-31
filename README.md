@@ -77,60 +77,21 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> GitHub Analytics</h2>
 
 <div align="center">
-<h3>Profile: <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></h3>
-<p><strong>Total Contributions:</strong> 573</p>
-<p>Jan 2, 2025 - Present</p>
-<p><strong>Current Streak:</strong> 4</p>
-<p>Mar 28 - Mar 31</p>
-<p><strong>Longest Streak:</strong> 6</p>
-<p>Feb 25, 2025 - Mar 2, 2025</p>
-<p><strong>Profile Views:</strong> 5</p>
+<h3>Live data from <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></h3>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ABONASIMI&theme=github_dark" width="100%" alt="GitHub profile details"/>
 </div>
 
 <div align="center">
-<img height="180em"
-src="https://github-readme-streak-stats.herokuapp.com/?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=003B44&sideLabels=003B44&dates=003B44"/>
-
-
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=00FFFF&sideLabels=8B949E&dates=8B949E" height="185" alt="GitHub streak stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ABONASIMI&theme=github_dark" height="185" alt="GitHub stats"/>
 </div>
 
-
-
-
-
-
-<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Coding Profiles</h2>
-
 <div align="center">
-<a href="https://leetcode.com/ABONASIMI/" target="_blank">
-<img src="https://leetcard.jacoblin.cool/ABONASIMI?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=10"/>
-</a>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ABONASIMI&theme=github-compact&bg_color=0D1117&color=00FFFF&line=00FFFF&point=003B44&area=true&hide_border=true"/>
-
-
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ABONASIMI&bg_color=0D1117&color=00FFFF&line=00FFFF&point=00FFFF&area=true&hide_border=true" width="100%" alt="GitHub activity graph"/>
 </div>
 
-
----
-
-<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Contribution Snake</h2>
-
 <div align="center">
-<!-- <picture>
-  <source media="(prefers-color-scheme: dark)" 
-  srcset="https://github.com/ABONASIMI/ABONASIMI/blob/output/github-contribution-grid-snake-dark.svg?raw=true">
-  <source media="(prefers-color-scheme: light)" 
-  srcset="https://github.com/ABONASIMI/ABONASIMI/blob/output/github-contribution-grid-snake.svg?raw=true">
-  <img alt="github contribution grid snake animation" 
-  src="https://github.com/ABONASIMI/ABONASIMI/blob/output/github-contribution-grid-snake.svg?raw=true" width="100%">
-</picture> -->
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
-</picture>
+<img src="https://ghchart.rshah.org/00ffff/ABONASIMI" width="100%" alt="GitHub contribution heatmap"/>
 </div>
 
 ---
