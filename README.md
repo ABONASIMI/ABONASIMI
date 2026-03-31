@@ -70,6 +70,33 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 </td>
 
 </tr>
+<tr>
+
+<td width="50%">
+<div align="center" style="background:#4B0082;padding:25px;border-radius:18px;">
+<h3>Cybersecurity</h3>
+<br/>
+
+<img src="https://img.shields.io/badge/Nmap-373737?style=for-the-badge&logo=nmap&logoColor=white"/>
+<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/CTF-00E7FF?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Penetration%20Testing-%23FF6B6B?style=for-the-badge&logoColor=white"/>
+
+</div>
+</td>
+
+<td width="50%">
+<div align="center" style="background:#8B4513;padding:25px;border-radius:18px;">
+<h3>DevOps</h3>
+<br/>
+
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088F0?style=for-the-badge&logo=github-actions&logoColor=white"/>
+
+</div>
+</td>
+
+</tr>
 </table>
 
 </div>
@@ -120,6 +147,14 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <img src="./assets/cyber-terminal-animated.svg" width="100%" alt="Animated cyber terminal demo"/>
 </div>
 
+<p align="center">
+  <a href="./cyber.html">
+    <img src="https://img.shields.io/badge/Open-cyber.html-00E7FF?style=for-the-badge&logo=html5&logoColor=06121d" alt="Open cyber html page"/>
+  </a>
+</p>
+
+<p align="center"><strong>so-long</strong></p>
+
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
@@ -127,11 +162,6 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
   <img alt="Pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
 </picture>
 </div>
-
-```bash
-# Run safe cyber demo animation from this repo
-bash scripts/cyber_show_demo.sh
-```
 
 ---
 

@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER COMMAND | Threat Intelligence</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap');
+
+        :root {
+            --bg-dark: #03060f;
+            --bg-panel: rgba(6, 15, 30, 0.6);
+            --cyan: #00f3ff;
+            --cyan-glow: rgba(0, 243, 255, 0.4);
+            --green: #00ff66;
+            --green-glow: rgba(0, 255, 102, 0.4);
+            --violet: #bc13fe;
+            --blue: #0044ff;
+            --text-main: #e0f0ff;
+            --text-muted: #6b8bb4;
+            --font-head: 'Orbitron', sans-serif;
+            --font-mono: 'Share Tech Mono', monospace;
+            --glass-border: 1px solid rgba(0, 243, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-mono);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Background Effects */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -3;
+            opacity: 0.3;
+        }
+
+        .cyber-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -2;
+            background-image: 
+                linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            transform: perspective(500px) rotateX(60deg) translateY(-100px) translateZ(-200px);
+            animation: gridMove 20s linear infinite;
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 10px;
+            background: linear-gradient(to bottom, transparent, var(--cyan-glow), transparent);
+            opacity: 0.5;
+            z-index: 9999;
+            pointer-events: none;
+            animation: scan 4s linear infinite;
+        }
+
+        .vignette {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle at center, transparent 40%, #03060f 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Layout & Typography */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-head);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--cyan);
+            margin-bottom: 3rem;
+            text-shadow: 0 0 10px var(--cyan-glow);
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title::before, .section-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 2px;
+            background: var(--cyan);
+            box-shadow: 0 0 10px var(--cyan);
+        }
+        .section-title::before { right: 100%; margin-right: 15px; }
+        .section-title::after { left: 100%; margin-left: 15px; }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        /* Glassmorphism */
+        .glass-panel {
+            background: var(--bg-panel);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: var(--glass-border);
+            border-radius: 8px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transform: skewX(-25deg);
+            animation: shine 6s infinite;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .glitch-wrapper {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .glitch {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(0, 243, 255, 0.8);
+            position: relative;
+        }
+
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+        }
+
+        .glitch::before {
+            left: 3px;
+            text-shadow: -2px 0 var(--violet);
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -3px;
+            text-shadow: -2px 0 var(--cyan);
+            clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        .typing-container {
+            font-size: 1.2rem;
+            color: var(--green);
+            min-height: 2rem;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 5px var(--green-glow);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2rem;
+            background-color: var(--green);
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-family: var(--font-head);
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: transparent;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            color: var(--bg-dark);
+            background: var(--cyan);
+            border: 1px solid var(--cyan);
+            box-shadow: 0 0 15px var(--cyan-glow), inset 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 30px var(--cyan), inset 0 0 20px rgba(255,255,255,0.8);
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            color: var(--violet);
+            border: 1px solid var(--violet);
+            box-shadow: 0 0 10px rgba(188, 19, 254, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(188, 19, 254, 0.1);
+            box-shadow: 0 0 20px rgba(188, 19, 254, 0.6), inset 0 0 10px rgba(188, 19, 254, 0.4);
+            transform: scale(1.05);
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: -3rem;
+            z-index: 10;
+            position: relative;
+        }
+
+        .stat-card {
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid var(--cyan);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 243, 255, 0.1);
+            border-top: 2px solid var(--green);
+        }
+
+        .stat-value {
+            font-family: var(--font-head);
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 1rem 0;
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border-left: 3px solid transparent;
+            transition: all 0.4s ease;
+        }
+
+        .feature-card:hover {
+            border-left: 3px solid var(--cyan);
+            background: rgba(0, 243, 255, 0.05);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--cyan);
+            margin-bottom: 0.5rem;
+            filter: drop-shadow(0 0 8px var(--cyan-glow));
+        }
+
+        .feature-title {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .feature-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Dashboard/Visuals Section */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .dash-panel {
+            min-height: 400px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-family: var(--font-head);
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--green);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--green);
+            animation: pulse 2s infinite;
+        }
+
+        /* Terminal */
+        .terminal {
+            background: #000;
+            flex-grow: 1;
+            border-radius: 4px;
+            padding: 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            overflow-y: hidden;
+            position: relative;
+            border: 1px solid #111;
+        }
+
+        .term-header {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .term-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .term-btn.r { background: #ff5f56; }
+        .term-btn.y { background: #ffbd2e; }
+        .term-btn.g { background: #27c93f; }
+
+        .term-content {
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .log-line {
+            margin-bottom: 0.3rem;
+            opacity: 0;
+            animation: fadeInLog 0.2s forwards;
+        }
+
+        .log-time { color: var(--text-muted); margin-right: 10px; }
+        .log-info { color: var(--blue); }
+        .log-warn { color: #ffbd2e; }
+        .log-crit { color: #ff5f56; }
+        .log-succ { color: var(--green); }
+
+        /* Network & Radar */
+        .radar-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radar {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: 
+                repeating-radial-gradient(
+                    transparent,
+                    transparent 25px,
+                    rgba(0, 243, 255, 0.2) 26px,
+                    transparent 27px
+                ),
+                linear-gradient(90deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px) 50% 50% / 100% 1px,
+                linear-gradient(0deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px) 50% 50% / 1px 100%;
+            border: 2px solid rgba(0, 243, 255, 0.5);
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 243, 255, 0.1) inset;
+        }
+
+        .radar::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 125px;
+            height: 125px;
+            background: conic-gradient(from 0deg, transparent 70%, rgba(0, 243, 255, 0.8) 100%);
+            transform-origin: 0 0;
+            animation: spin 3s linear infinite;
+        }
+
+        .radar-dot {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #ff5f56;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #ff5f56;
+            opacity: 0;
+        }
+
+        #network-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Threat Meter */
+        .threat-meter {
+            margin-top: 2rem;
+        }
+        
+        .meter-bar {
+            height: 8px;
+            background: #111;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+            border: 1px solid #222;
+        }
+
+        .meter-fill {
+            height: 100%;
+            width: 25%;
+            background: linear-gradient(90deg, var(--green), #ffbd2e, #ff5f56);
+            background-size: 400% 100%;
+            animation: gradientShift 3s ease infinite;
+            box-shadow: 0 0 10px #ffbd2e;
+        }
+
+        /* Timeline Process */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: rgba(0, 243, 255, 0.2);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+
+        .timeline-content {
+            width: 80%;
+            padding: 1.5rem;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: calc(50% - 8px);
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-dark);
+            border: 3px solid var(--cyan);
+            box-shadow: 0 0 10px var(--cyan);
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            right: auto;
+            left: calc(50% - 8px);
+        }
+
+        .timeline-item:hover::after {
+            background: var(--cyan);
+            box-shadow: 0 0 20px var(--cyan);
+        }
+
+        .timeline-date {
+            color: var(--cyan);
+            font-weight: bold;
+            font-family: var(--font-head);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* CTA & Footer */
+        .cta {
+            text-align: center;
+            background: linear-gradient(0deg, rgba(0, 68, 255, 0.1) 0%, transparent 100%);
+            border-top: 1px solid rgba(0, 68, 255, 0.2);
+            position: relative;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px var(--blue);
+        }
+
+        footer {
+            background: #02040a;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: var(--glass-border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-glow {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 2px;
+            background: var(--cyan);
+            box-shadow: 0 0 20px 5px var(--cyan-glow);
+        }
+
+        /* Animations */
+        @keyframes scan {
+            0% { top: -10px; }
+            100% { top: 100vh; }
+        }
+
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 30px; }
+        }
+
+        @keyframes glitch-anim-1 {
+            0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px); }
+            20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px); }
+            40% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, 2px); }
+            60% { clip-path: inset(80% 0 5% 0); transform: translate(2px, -2px); }
+            80% { clip-path: inset(10% 0 70% 0); transform: translate(-1px, 1px); }
+            100% { clip-path: inset(30% 0 50% 0); transform: translate(1px, -1px); }
+        }
+
+        @keyframes glitch-anim-2 {
+            0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, -1px); }
+            20% { clip-path: inset(30% 0 20% 0); transform: translate(-2px, 2px); }
+            40% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -2px); }
+            60% { clip-path: inset(20% 0 50% 0); transform: translate(-1px, 1px); }
+            80% { clip-path: inset(50% 0 30% 0); transform: translate(1px, -1px); }
+            100% { clip-path: inset(5% 0 80% 0); transform: translate(-2px, 1px); }
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 255, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 102, 0); }
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInLog {
+            to { opacity: 1; }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Scroll Reveals */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .dashboard-grid { grid-template-columns: 1fr; }
+            .timeline::before { left: 30px; }
+            .timeline-item { justify-content: flex-start; padding-right: 0; padding-left: 80px; }
+            .timeline-item:nth-child(even) { padding-left: 80px; }
+            .timeline-item::after { left: 22px !important; right: auto; }
+            .timeline-content { width: 100%; }
+            .glitch { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+    <div class="cyber-grid"></div>
+    <div class="scanline"></div>
+    <div class="vignette"></div>
+
+    <header class="hero container">
+        <div class="glitch-wrapper">
+            <h1 class="glitch" data-text="CYBER SECURITY COMMAND">CYBER SECURITY COMMAND</h1>
+        </div>
+        <div class="typing-container">
+            <span id="type-text"></span><span class="cursor"></span>
+        </div>
+        <div class="btn-group reveal active">
+            <a href="#dashboard" class="btn btn-primary">Initialize System</a>
+            <a href="#features" class="btn btn-secondary">View Protocols</a>
+        </div>
+    </header>
+
+    <section id="stats" class="container">
+        <div class="stats-grid">
+            <div class="glass-panel stat-card reveal">
+                <div class="stat-label">THREATS NEUTRALIZED</div>
+                <div class="stat-value" data-target="84920">0</div>
+                <div class="stat-label" style="color: var(--green);">▲ 12.4% THIS WEEK</div>
+            </div>
+            <div class="glass-panel stat-card reveal" style="transition-delay: 0.1s;">
+                <div class="stat-label">ACTIVE NODES</div>
+                <div class="stat-value" data-target="1024">0</div>
+                <div class="stat-label" style="color: var(--cyan);">GLOBAL NETWORK</div>
+            </div>
+            <div class="glass-panel stat-card reveal" style="transition-delay: 0.2s;">
+                <div class="stat-label">ENCRYPTION HASH RATE</div>
+                <div class="stat-value" data-target="256">0</div>
+                <div class="stat-label" style="color: var(--violet);">PETAHASH/S</div>
+            </div>
+            <div class="glass-panel stat-card reveal" style="transition-delay: 0.3s;">
+                <div class="stat-label">SYSTEM UPTIME</div>
+                <div class="stat-value"><span data-target="99">0</span>.99%</div>
+                <div class="stat-label" style="color: var(--blue);">SECURE STATUS</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="container">
+        <h2 class="section-title reveal">Live Defense Matrix</h2>
+        <div class="dashboard-grid">
+            
+            <div class="glass-panel dash-panel reveal">
+                <div class="panel-header">
+                    <span>SERVER_LOGS // COMMAND_INTERFACE</span>
+                    <div class="status-dot"></div>
+                </div>
+                <div class="terminal">
+                    <div class="term-header">
+                        <div class="term-btn r"></div>
+                        <div class="term-btn y"></div>
+                        <div class="term-btn g"></div>
+                    </div>
+                    <div class="term-content" id="term-output">
+                        </div>
+                </div>
+                <div class="threat-meter">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                        <span>DEFCON LEVEL</span>
+                        <span style="color: #ffbd2e;">ELEVATED</span>
+                    </div>
+                    <div class="meter-bar">
+                        <div class="meter-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel dash-panel reveal" style="transition-delay: 0.2s; position: relative; overflow: hidden;">
+                <div class="panel-header">
+                    <span>GLOBAL_RADAR // NODE_MAP</span>
+                    <span style="color: var(--cyan);">SCANNING...</span>
+                </div>
+                <canvas id="network-canvas"></canvas>
+                <div class="radar-container">
+                    <div class="radar" id="radar-element">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features" class="container">
+        <h2 class="section-title reveal">Tactical Capabilities</h2>
+        <div class="features-grid">
+            <div class="glass-panel feature-card reveal">
+                <div class="feature-icon">🛡️</div>
+                <h3 class="feature-title">AI-Powered Detection</h3>
+                <p class="feature-desc">Machine learning algorithms analyze network traffic in real-time, identifying zero-day exploits before they breach the perimeter.</p>
+            </div>
+            <div class="glass-panel feature-card reveal" style="transition-delay: 0.1s;">
+                <div class="feature-icon">🌐</div>
+                <h3 class="feature-title">Network Defense</h3>
+                <p class="feature-desc">Automated firewall configurations and deep packet inspection block malicious packets at the outermost edge of your infrastructure.</p>
+            </div>
+            <div class="glass-panel feature-card reveal" style="transition-delay: 0.2s;">
+                <div class="feature-icon">👁️‍🗨️</div>
+                <h3 class="feature-title">Ethical Hacking</h3>
+                <p class="feature-desc">Continuous automated penetration testing simulates advanced persistent threats to map out and patch vulnerabilities.</p>
+            </div>
+            <div class="glass-panel feature-card reveal">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">Quantum Encryption</h3>
+                <p class="feature-desc">Military-grade cryptographic protocols ensure data at rest and data in transit remain completely inaccessible to unauthorized entities.</p>
+            </div>
+            <div class="glass-panel feature-card reveal" style="transition-delay: 0.1s;">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Instant Mitigation</h3>
+                <p class="feature-desc">Sub-second response times isolate compromised nodes and reroute clean traffic to maintain 99.99% operational uptime.</p>
+            </div>
+            <div class="glass-panel feature-card reveal" style="transition-delay: 0.2s;">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Forensic Analytics</h3>
+                <p class="feature-desc">Comprehensive log aggregation and immutable audit trails provide complete visibility into attack vectors and origins.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title reveal">Deployment Protocol</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="glass-panel timeline-content">
+                    <span class="timeline-date">PHASE 01: RECONNAISSANCE</span>
+                    <h3>Infrastructure Mapping</h3>
+                    <p class="feature-desc">Deploying passive scanners to identify all endpoints, open ports, and potential attack surfaces across the digital ecosystem.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="glass-panel timeline-content">
+                    <span class="timeline-date">PHASE 02: INFILTRATION</span>
+                    <h3>Vulnerability Assessment</h3>
+                    <p class="feature-desc">Executing controlled exploits against identified weaknesses to determine risk severity and potential data exposure.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="glass-panel timeline-content">
+                    <span class="timeline-date">PHASE 03: FORTIFICATION</span>
+                    <h3>Perimeter Hardening</h3>
+                    <p class="feature-desc">Applying critical patches, reconfiguring access controls, and deploying zero-trust architecture parameters.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="glass-panel timeline-content">
+                    <span class="timeline-date">PHASE 04: SURVEILLANCE</span>
+                    <h3>Continuous Monitoring</h3>
+                    <p class="feature-desc">Activating the 24/7 Security Operations Center (SOC) dashboard for real-time anomaly detection and incident response.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta reveal">
+        <div class="container">
+            <h2>READY TO SECURE YOUR GRID?</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-muted); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Deploy our enterprise-grade security protocols today and immunize your infrastructure against next-generation cyber threats.
+            </p>
+            <a href="#" class="btn btn-primary">Establish Uplink</a>
+        </div>
+        <div class="footer-glow"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>SYSTEM SECURE // ENCRYPTION ENABLED // ALL SYSTEMS NOMINAL</p>
+            <p style="margin-top: 0.5rem; opacity: 0.5;">&copy; 2026 CYBER COMMAND DIGITAL DEFENSE.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Typing Effect
+        const textToType = "Real-Time Threat Intelligence & Network Defense //";
+        const typeTarget = document.getElementById('type-text');
+        let typeIndex = 0;
+
+        function typeWriter() {
+            if (typeIndex < textToType.length) {
+                typeTarget.innerHTML += textToType.charAt(typeIndex);
+                typeIndex++;
+                setTimeout(typeWriter, 50 + Math.random() * 50);
+            }
+        }
+        setTimeout(typeWriter, 1000);
+
+        // 2. Animated Counters
+        const counters = document.querySelectorAll('.stat-value');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                let targetEl = counter.hasAttribute('data-target') ? counter : counter.querySelector('[data-target]');
+                if(!targetEl) return;
+                
+                const target = +targetEl.getAttribute('data-target');
+                const count = +targetEl.innerText.replace(/,/g, '');
+                const inc = target / speed;
+
+                if (count < target) {
+                    targetEl.innerText = Math.ceil(count + inc).toLocaleString();
+                    setTimeout(() => animateCounters(), 20);
+                } else {
+                    targetEl.innerText = target.toLocaleString();
+                }
+            });
+        }
+
+        // 3. Scroll Reveal & Intersection Observer
+        const reveals = document.querySelectorAll('.reveal');
+        let countersTriggered = false;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    // Trigger counters when stats section is visible
+                    if (entry.target.classList.contains('stat-card') && !countersTriggered) {
+                        animateCounters();
+                        countersTriggered = true;
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(reveal => observer.observe(reveal));
+
+        // 4. Background Matrix/Particle Canvas
+        const bgCanvas = document.getElementById('bg-canvas');
+        const bgCtx = bgCanvas.getContext('2d');
+        let width, height;
+        let particles = [];
+
+        function initBgCanvas() {
+            width = bgCanvas.width = window.innerWidth;
+            height = bgCanvas.height = window.innerHeight;
+            particles = [];
+            for (let i = 0; i < 100; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    size: Math.random() * 2 + 1,
+                    speedY: Math.random() * 1 + 0.5,
+                    opacity: Math.random() * 0.5 + 0.1
+                });
+            }
+        }
+
+        function drawBg() {
+            bgCtx.clearRect(0, 0, width, height);
+            bgCtx.fillStyle = 'rgba(0, 243, 255, 1)';
+            
+            particles.forEach(p => {
+                bgCtx.globalAlpha = p.opacity;
+                bgCtx.fillRect(p.x, p.y, p.size, p.size * 5); // draw as falling lines
+                p.y += p.speedY;
+                if (p.y > height) {
+                    p.y = 0;
+                    p.x = Math.random() * width;
+                }
+            });
+            requestAnimationFrame(drawBg);
+        }
+        
+        window.addEventListener('resize', initBgCanvas);
+        initBgCanvas();
+        drawBg();
+
+        // 5. Terminal Simulation
+        const termContent = document.getElementById('term-output');
+        const logs = [
+            { type: 'info', text: 'Establishing secure connection...' },
+            { type: 'info', text: 'Handshake protocol initiated. Key exchange successful.' },
+            { type: 'succ', text: 'Uplink established. Latency: 12ms.' },
+            { type: 'warn', text: 'Scanning external ports for vulnerabilities...' },
+            { type: 'info', text: 'Port 80: OPEN. Port 443: OPEN. Port 22: FILTERED.' },
+            { type: 'crit', text: 'ALERT: Unauthorized access attempt detected on IP 192.168.1.45' },
+            { type: 'info', text: 'Deploying counter-measures. Isolating subnet.' },
+            { type: 'succ', text: 'Threat neutralized. IP blacklisted.' },
+            { type: 'info', text: 'Awaiting further instructions...' }
+        ];
+
+        let logIndex = 0;
+        function addLog() {
+            if (termContent.childElementCount > 6) {
+                termContent.removeChild(termContent.firstChild);
+            }
+
+            const log = logs[logIndex % logs.length];
+            const div = document.createElement('div');
+            div.className = 'log-line';
+            
+            const time = new Date().toLocaleTimeString('en-US', { hour12: false, hour: "numeric", minute: "numeric", second: "numeric" });
+            
+            div.innerHTML = `<span class="log-time">[${time}]</span> <span class="log-${log.type}">> ${log.text}</span>`;
+            termContent.appendChild(div);
+            
+            logIndex++;
+            setTimeout(addLog, 1500 + Math.random() * 2000);
+        }
+        setTimeout(addLog, 2000);
+
+        // 6. Network Nodes Canvas (Dashboard)
+        const netCanvas = document.getElementById('network-canvas');
+        const netCtx = netCanvas.getContext('2d');
+        let netW, netH;
+        let nodes = [];
+
+        function initNetCanvas() {
+            const rect = netCanvas.parentElement.getBoundingClientRect();
+            netW = netCanvas.width = rect.width;
+            netH = netCanvas.height = rect.height;
+            nodes = [];
+            for (let i = 0; i < 30; i++) {
+                nodes.push({
+                    x: Math.random() * netW,
+                    y: Math.random() * netH,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5
+                });
+            }
+        }
+
+        function drawNet() {
+            netCtx.clearRect(0, 0, netW, netH);
+            netCtx.lineWidth = 0.5;
+            
+            for (let i = 0; i < nodes.length; i++) {
+                let n1 = nodes[i];
+                n1.x += n1.vx;
+                n1.y += n1.vy;
+                
+                // Bounce
+                if(n1.x < 0 || n1.x > netW) n1.vx *= -1;
+                if(n1.y < 0 || n1.y > netH) n1.vy *= -1;
+
+                // Draw Node
+                netCtx.beginPath();
+                netCtx.arc(n1.x, n1.y, 2, 0, Math.PI * 2);
+                netCtx.fillStyle = 'rgba(0, 243, 255, 0.8)';
+                netCtx.fill();
+
+                // Draw Connections
+                for (let j = i + 1; j < nodes.length; j++) {
+                    let n2 = nodes[j];
+                    let dist = Math.hypot(n1.x - n2.x, n1.y - n2.y);
+                    if (dist < 80) {
+                        netCtx.beginPath();
+                        netCtx.moveTo(n1.x, n1.y);
+                        netCtx.lineTo(n2.x, n2.y);
+                        netCtx.strokeStyle = `rgba(0, 243, 255, ${1 - dist/80})`;
+                        netCtx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(drawNet);
+        }
+
+        // Delay init to ensure layout is complete
+        setTimeout(() => {
+            initNetCanvas();
+            drawNet();
+        }, 500);
+        window.addEventListener('resize', initNetCanvas);
+
+        // 7. Radar Blips Simulation
+        const radar = document.getElementById('radar-element');
+        setInterval(() => {
+            const dot = document.createElement('div');
+            dot.className = 'radar-dot';
+            
+            // Random position inside the circle
+            const angle = Math.random() * Math.PI * 2;
+            const radius = Math.random() * 100;
+            const x = 125 + Math.cos(angle) * radius - 3; // 125 is center, 3 is half dot width
+            const y = 125 + Math.sin(angle) * radius - 3;
+            
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+            
+            radar.appendChild(dot);
+            
+            // Fade in and out
+            setTimeout(() => dot.style.opacity = '1', 50);
+            setTimeout(() => {
+                dot.style.opacity = '0';
+                setTimeout(() => dot.remove(), 500);
+            }, 2000);
+            
+        }, 1500);
+
+    </script>
+</body>
+</html>
