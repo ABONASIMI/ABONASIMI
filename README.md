@@ -134,11 +134,15 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 <p align="center">I am learning cybersecurity step by step through labs and CTF practice (Natas level 8 and Leviathan level 3).</p>
 
+<div align="center">
+<img src="./assets/cyber-ctf-game.svg" width="100%" alt="Cyber Learning Lab"/>
+</div>
+
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
 
 <p align="center"><strong>Safe simulation only</strong> - visual animation only, no hacking, no real credentials, no network attacks.</p>
-<p align="center">In my profile, I use the exact animations from <code>scripts/cyber.html</code> and <code>scripts/cyber2.html</code>.</p>
+<p align="center">These are README-safe animated versions of <code>scripts/cyber.html</code> and <code>scripts/cyber2.html</code>.</p>
 
 <p align="center"><strong>cyber</strong></p>
 
@@ -149,7 +153,7 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <p align="center"><strong>cyber2</strong></p>
 
 <div align="center">
-<img src="./assets/contribution-snake-demo.svg" width="100%" alt="cyber2 animation"/>
+<img src="./assets/cyber2-control-center-animated.svg" width="100%" alt="cyber2 animation"/>
 </div>
 
 ---
