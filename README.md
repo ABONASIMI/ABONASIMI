@@ -113,7 +113,7 @@ const mohamad = {
 <p align="center">Learning penetration testing and ethical hacking in DanishJooYar.</p>
 
 ---
-<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
+<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Animation</h2>
 
 <div align="center">
 <img src="./assets/cyber-radar-scan.svg" width="100%" alt="Radar animation"/>
