@@ -100,15 +100,31 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <div align="center">
 <img src="https://img.shields.io/badge/Level-Beginner-1f6feb?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/OverTheWire-Natas%20Level%208-00e7ff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OverTheWire-Leviathan%20Level%203-00c2ff?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Nmap-Basic%20Usage-004170?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Strings-Binary%20Inspection%20(Basic)-0b8f7a?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Linux-Learning-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
 </div>
 
-<p align="center">I am learning cybersecurity step by step through labs and CTF practice.</p>
+<p align="center">I am learning cybersecurity step by step through labs and CTF practice (Natas level 8 and Leviathan level 3).</p>
 
 <div align="center">
 <img src="./assets/cyber-ctf-game.svg" width="100%" alt="Cyber CTF game board"/>
 </div>
+
+---
+<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
+
+<p align="center"><strong>Safe simulation only</strong> - terminal aesthetics, no hacking, no real credentials, no network attacks.</p>
+
+<div align="center">
+<img src="./assets/cyber-terminal-demo.svg" width="100%" alt="Cyber terminal demo style"/>
+</div>
+
+```bash
+# Run safe cyber demo animation from this repo
+bash scripts/cyber_show_demo.sh
+```
 
 ---
 

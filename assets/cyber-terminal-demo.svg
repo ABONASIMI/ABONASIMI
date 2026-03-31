@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-label="Cyber terminal simulation board">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03060c"/>
+      <stop offset="100%" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9d"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="620" fill="url(#bg)"/>
+
+  <g stroke="#0f2532" stroke-width="1" opacity="0.8">
+    <path d="M0 40h1200M0 80h1200M0 120h1200M0 160h1200M0 200h1200M0 240h1200M0 280h1200M0 320h1200M0 360h1200M0 400h1200M0 440h1200M0 480h1200M0 520h1200M0 560h1200"/>
+    <path d="M80 0v620M160 0v620M240 0v620M320 0v620M400 0v620M480 0v620M560 0v620M640 0v620M720 0v620M800 0v620M880 0v620M960 0v620M1040 0v620M1120 0v620"/>
+  </g>
+
+  <text x="30" y="34" fill="#00ff9d" font-family="monospace" font-size="22" font-weight="700" filter="url(#glow)">CYBER DEMO TERMINAL (SAFE SIMULATION)</text>
+  <text x="34" y="58" fill="#9dc4d3" font-family="monospace" font-size="13">No hacking | No network attacks | No real credentials</text>
+
+  <rect x="24" y="80" width="1152" height="1.6" fill="url(#line)" opacity="0.9"/>
+
+  <rect x="30" y="96" width="550" height="220" rx="8" fill="#08121b" stroke="#00ff9d" stroke-opacity="0.35"/>
+  <text x="46" y="124" fill="#00ff9d" font-family="monospace" font-size="15">System Monitor</text>
+  <text x="46" y="150" fill="#b8e5d1" font-family="monospace" font-size="13">CPU: 12%   MEM: 8%   DISK: 29%</text>
+  <text x="46" y="174" fill="#b8e5d1" font-family="monospace" font-size="13">SESSION: cyberdemo</text>
+  <text x="46" y="198" fill="#b8e5d1" font-family="monospace" font-size="13">LAB: ~/demo_lab</text>
+  <text x="46" y="222" fill="#7cb59d" font-family="monospace" font-size="12">[sim] indexing local project files...</text>
+  <text x="46" y="244" fill="#7cb59d" font-family="monospace" font-size="12">[sim] copy pictures -> backup (virtual 2000 files)</text>
+  <text x="46" y="266" fill="#7cb59d" font-family="monospace" font-size="12">[sim] copy downloads -> backup (virtual 850 files)</text>
+  <text x="46" y="288" fill="#7cb59d" font-family="monospace" font-size="12">[sim] complete: checksum ok</text>
+
+  <rect x="600" y="96" width="570" height="220" rx="8" fill="#08121b" stroke="#00d4ff" stroke-opacity="0.35"/>
+  <text x="616" y="124" fill="#00d4ff" font-family="monospace" font-size="15">Matrix View + Progress</text>
+  <text x="616" y="150" fill="#9adbf1" font-family="monospace" font-size="13">cmatrix -b -s</text>
+  <text x="616" y="172" fill="#6fcf97" font-family="monospace" font-size="12"># # @ * &amp; % $ + = ? /</text>
+  <text x="616" y="190" fill="#6fcf97" font-family="monospace" font-size="12">7 c z t 9 p h n a 4 w</text>
+  <text x="616" y="208" fill="#6fcf97" font-family="monospace" font-size="12">r 2 l 8 b d 0 x y 3 q</text>
+  <text x="616" y="226" fill="#6fcf97" font-family="monospace" font-size="12">i f 5 v m k 1 o g u e</text>
+  <text x="616" y="252" fill="#9adbf1" font-family="monospace" font-size="12">Indexing local project files   [##################----] 81%</text>
+  <text x="616" y="274" fill="#9adbf1" font-family="monospace" font-size="12">Copying folder: documents      [####################--] 90%</text>
+  <text x="616" y="296" fill="#9adbf1" font-family="monospace" font-size="12">Copying folder: logs           [################------] 74%</text>
+
+  <rect x="30" y="334" width="1140" height="220" rx="8" fill="#08121b" stroke="#00ff9d" stroke-opacity="0.35"/>
+  <text x="46" y="362" fill="#00ff9d" font-family="monospace" font-size="15">Cybersecurity Learning Notes</text>
+  <text x="46" y="392" fill="#d9f6ff" font-family="monospace" font-size="13">- OverTheWire Natas: level 8 reached</text>
+  <text x="46" y="416" fill="#d9f6ff" font-family="monospace" font-size="13">- OverTheWire Leviathan: level 3 reached</text>
+  <text x="46" y="440" fill="#d9f6ff" font-family="monospace" font-size="13">- Using nmap for basic scanning and host/service checks</text>
+  <text x="46" y="464" fill="#d9f6ff" font-family="monospace" font-size="13">- Using strings on binaries to inspect readable output</text>
+  <text x="46" y="488" fill="#9dc4d3" font-family="monospace" font-size="12">Learning mindset: beginner, honest progress, strong fundamentals.</text>
+
+  <rect x="46" y="516" width="1060" height="14" rx="7" fill="#10202a" stroke="#00ff9d" stroke-opacity="0.3"/>
+  <rect x="48" y="518" width="625" height="10" rx="5" fill="url(#line)" opacity="0.92"/>
+  <text x="690" y="528" fill="#d9f6ff" font-family="monospace" font-size="12">Progress: 59%</text>
+</svg>
