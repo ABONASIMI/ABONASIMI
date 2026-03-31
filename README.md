@@ -79,12 +79,12 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 <div align="center">
 <h3>Live data from <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></h3>
-<img src="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/main/profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" alt="GitHub profile details"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ABONASIMI&theme=github_dark" width="100%" alt="GitHub profile details"/>
 </div>
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=00FFFF&sideLabels=8B949E&dates=8B949E" height="185" alt="GitHub streak stats"/>
-<img src="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/main/profile-summary-card-output/github_dark/3-stats.svg" height="185" alt="GitHub stats"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ABONASIMI&theme=github_dark" height="185" alt="GitHub stats"/>
 </div>
 
 <div align="center">
