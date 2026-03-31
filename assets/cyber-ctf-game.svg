@@ -43,12 +43,12 @@
     <text x="380" y="214" fill="#ffd166" font-size="16">IN PROGRESS</text>
 
     <rect x="620" y="184" width="520" height="48" rx="8" fill="#0a172b" stroke="#00e7ff" stroke-opacity="0.4"/>
-    <text x="640" y="214" fill="#d7f6ff" font-size="19">[4] STRINGS ON BINARIES (BASIC)</text>
+    <text x="640" y="214" fill="#d7f6ff" font-size="19">[4] LINUX COMMAND-LINE PRACTICE</text>
     <text x="945" y="214" fill="#ffd166" font-size="16">PRACTICING</text>
   </g>
 
   <g font-family="monospace">
-    <text x="62" y="272" fill="#95b3cc" font-size="14">Current toolkit: Linux | Nmap | strings</text>
+    <text x="62" y="272" fill="#95b3cc" font-size="14">Current toolkit: Linux | Nmap</text>
     <text x="62" y="296" fill="#95b3cc" font-size="14">Goal: Build strong fundamentals and keep learning consistently.</text>
   </g>
 

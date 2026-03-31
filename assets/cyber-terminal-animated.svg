@@ -37,7 +37,7 @@
   <text x="46" y="126" fill="#00ff9c" font-family="monospace" font-size="15">System / Demo Progress</text>
   <text x="46" y="150" fill="#c8f7dd" font-family="monospace" font-size="13">SESSION: cyberdemo</text>
   <text x="46" y="174" fill="#c8f7dd" font-family="monospace" font-size="13">Natas: L8  |  Leviathan: L3</text>
-  <text x="46" y="198" fill="#c8f7dd" font-family="monospace" font-size="13">Tools: Linux | nmap | strings</text>
+  <text x="46" y="198" fill="#c8f7dd" font-family="monospace" font-size="13">Tools: Linux | nmap</text>
   <text x="46" y="226" fill="#86b89f" font-family="monospace" font-size="12">[sim] indexing local project files...</text>
   <text x="46" y="246" fill="#86b89f" font-family="monospace" font-size="12">[sim] copying documents to backup...</text>
   <text x="46" y="266" fill="#86b89f" font-family="monospace" font-size="12">[sim] checksums verified...</text>
@@ -69,7 +69,7 @@
   <text x="46" y="394" fill="#dbf7ff" font-family="monospace" font-size="13">[x] OverTheWire Natas -> level 8</text>
   <text x="46" y="418" fill="#dbf7ff" font-family="monospace" font-size="13">[x] OverTheWire Leviathan -> level 3</text>
   <text x="46" y="442" fill="#dbf7ff" font-family="monospace" font-size="13">[~] nmap host/service discovery (basic)</text>
-  <text x="46" y="466" fill="#dbf7ff" font-family="monospace" font-size="13">[~] strings for quick binary inspection</text>
+  <text x="46" y="466" fill="#dbf7ff" font-family="monospace" font-size="13">[~] Linux command-line practice</text>
   <text x="46" y="490" fill="#9ac6d8" font-family="monospace" font-size="12">Goal: honest progress, no fake expert claims.</text>
 
   <rect x="46" y="516" width="1060" height="14" rx="7" fill="#122430" stroke="#00ff9c" stroke-opacity="0.35"/>

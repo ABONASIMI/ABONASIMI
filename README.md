@@ -102,8 +102,7 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <img src="https://img.shields.io/badge/OverTheWire-Natas%20Level%208-00e7ff?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/OverTheWire-Leviathan%20Level%203-00c2ff?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Nmap-Basic%20Usage-004170?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Strings-Binary%20Inspection%20(Basic)-0b8f7a?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux-Learning-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/Linux-Comfort%20with%20Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
 </div>
 
 <p align="center">I am learning cybersecurity step by step through labs and CTF practice (Natas level 8 and Leviathan level 3).</p>
@@ -122,7 +121,7 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 </div>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution snake"/>
+<img src="./assets/contribution-snake-demo.svg" width="100%" alt="Animated contribution snake"/>
 </div>
 
 ```bash
