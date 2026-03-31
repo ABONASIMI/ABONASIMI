@@ -121,7 +121,11 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 </div>
 
 <div align="center">
-<img src="./assets/contribution-snake-demo.svg" width="100%" alt="Animated contribution snake"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+  <img alt="Pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+</picture>
 </div>
 
 ```bash
