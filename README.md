@@ -136,7 +136,7 @@ const mohamad = {
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
 
 <div align="center">
-<img src="./assets/cyber-radar-node-map.svg" width="100%" alt="GLOBAL_RADAR // NODE_MAP"/>
+<img src="./assets/cyber-radar-scan.svg" width="100%" alt="Radar animation"/>
 </div>
 
 <div align="center">
