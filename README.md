@@ -88,10 +88,6 @@ const mohamad = {
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=ABONASIMI&bg_color=0D1117&color=00FFFF&line=00FFFF&point=00FFFF&area=true&hide_border=true" width="100%" alt="GitHub activity graph"/>
 </div>
 
-<div align="center">
-<img src="https://ghchart.rshah.org/00ffff/ABONASIMI" width="100%" alt="GitHub contribution heatmap"/>
-</div>
-
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> SO-LONG</h2>
 
@@ -114,7 +110,7 @@ const mohamad = {
 <img src="https://img.shields.io/badge/Linux-Comfort%20with%20Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
 </div>
 
-<p align="center">I am learning cybersecurity step by step through labs and CTF practice (Natas level 8 and Leviathan level 3).</p>
+<p align="center">Learning penetration testing and ethical hacking in DanishJooYar.</p>
 
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Demo Animation</h2>
