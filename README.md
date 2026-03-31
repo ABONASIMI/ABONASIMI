@@ -123,10 +123,6 @@ const mohamad = {
 <img src="./assets/cyber2-neuron-network.svg" width="100%" alt="Animated neuron network"/>
 </div>
 
-<div align="center">
-<img src="./assets/cyber2-cmatrix-real.gif" width="100%" alt="Cmatrix-style matrix visual"/>
-</div>
-
 ---
 
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif"
