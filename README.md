@@ -77,13 +77,14 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> GitHub Analytics</h2>
 
 <div align="center">
-<h3>Live GitHub Profile Info</h3>
-<p><strong>Name:</strong> Mohamad Abobaker Nasimi</p>
-<p><strong>Username:</strong> ABONASIMI</p>
-<p><strong>Public Repositories:</strong> 3</p>
-<p><strong>Followers:</strong> 2</p>
-<p><strong>Following:</strong> 2</p>
-<p><strong>Profile:</strong> <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></p>
+<h3>Profile: <a href="https://github.com/ABONASIMI" target="_blank">github.com/ABONASIMI</a></h3>
+<p><strong>Total Contributions:</strong> 573</p>
+<p>Jan 2, 2025 - Present</p>
+<p><strong>Current Streak:</strong> 4</p>
+<p>Mar 28 - Mar 31</p>
+<p><strong>Longest Streak:</strong> 6</p>
+<p>Feb 25, 2025 - Mar 2, 2025</p>
+<p><strong>Profile Views:</strong> 5</p>
 </div>
 
 <div align="center">
@@ -91,10 +92,6 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 src="https://github-readme-streak-stats.herokuapp.com/?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=003B44&sideLabels=003B44&dates=003B44"/>
 
 
-</div>
-
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=ABONASIMI&label=Profile%20Views&color=00FFFF&style=for-the-badge"/>
 </div>
 
 
