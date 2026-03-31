@@ -144,7 +144,7 @@ const mohamad = {
 </div>
 
 <div align="center">
-<img src="./assets/cyber2-matrix-rain.svg" width="100%" alt="Matrix background visual"/>
+<img src="./assets/cyber2-cmatrix-real.svg" width="100%" alt="Cmatrix-style matrix visual"/>
 </div>
 
 <div align="center">
