@@ -128,7 +128,7 @@ const mohamad = {
 </div>
 
 <div align="center">
-<img src="./assets/cyber2-cmatrix-real.svg" width="100%" alt="Cmatrix-style matrix visual"/>
+<img src="./assets/cyber2-cmatrix-real.gif" width="100%" alt="Cmatrix-style matrix visual"/>
 </div>
 
 ---
