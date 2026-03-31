@@ -84,7 +84,6 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=00FFFF&sideLabels=8B949E&dates=8B949E" height="185" alt="GitHub streak stats"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ABONASIMI&theme=github_dark" height="185" alt="GitHub stats"/>
 </div>
 
 <div align="center">
