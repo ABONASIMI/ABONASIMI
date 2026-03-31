@@ -95,6 +95,17 @@ Passionate about scalable backend systems • Modern frontend engineering • AI
 </div>
 
 ---
+<h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Contribution Game</h2>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/ABONASIMI/ABONASIMI/output/github-contribution-grid-snake.svg">
+</picture>
+</div>
+
+---
 
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif"
      height="30px"
