@@ -84,9 +84,9 @@ const mohamad = {
 <img src="https://streak-stats.demolab.com?user=ABONASIMI&hide_border=true&background=0D1117&stroke=00FFFF&ring=00FFFF&fire=00FFFF&currStreakNum=00FFFF&sideNums=00FFFF&currStreakLabel=00FFFF&sideLabels=8B949E&dates=8B949E" height="185" alt="GitHub streak stats"/>
 </div>
 
-<div align="center">
+<!-- <div align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=ABONASIMI&bg_color=0D1117&color=00FFFF&line=00FFFF&point=00FFFF&area=true&hide_border=true" width="100%" alt="GitHub activity graph"/>
-</div>
+</div> -->
 
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> SO-LONG</h2>
