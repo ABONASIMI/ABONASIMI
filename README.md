@@ -115,13 +115,6 @@ const mohamad = {
 ---
 <h2 align="center"><img src="https://i.ibb.co/FLs3HL9K/giphy.gif" height="30px" width="30px"> Cyber Animation</h2>
 
-<div align="center">
-<img src="./assets/cyber-radar-scan.svg" width="100%" alt="Radar animation"/>
-</div>
-
-<div align="center">
-<img src="./assets/cyber2-neuron-network.svg" width="100%" alt="Animated neuron network"/>
-</div>
 
 ---
 
