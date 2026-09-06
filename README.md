@@ -110,7 +110,7 @@ const mohamad = {
 <img src="https://img.shields.io/badge/Linux-Comfort%20with%20Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
 </div>
 
-<p align="center">Learning penetration testing and ethical hacking in DanishJooYar.</p>
+<p align="center">Learning penetration testing and ethical hacking in DanishJooYar and Codacker.</p>
 
 
 ---
